@@ -17,8 +17,10 @@ function checkPrice(){
     if(lowestPrice == null || lowestPrice > price){
         lowestPrice = price;
         alertMessage.textContent = "New lowest Price found!";
+        alertMessage.classList.add("new-low");
     }else{
         alertMessage.textContent = "No change";
+        alertMessage.classList.remove("new-low");
     }
     currentPriceDisplay.textContent = "Current price: $" + price;
     lowestPriceDisplay.textContent = "Lowest price: $" + lowestPrice;
@@ -29,7 +31,7 @@ checkButton.addEventListener("click", checkPrice);
 
 function addHistoryItem(entry){
     const li = document.createElement("li");
-    li.textContent = "$" + entry.name + " - " + entry.timestamp;
+    li.textContent = "$" + entry.price + " - " + entry.timestamp;
     historyList.appendChild(li);
 }
 
