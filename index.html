@@ -16,8 +16,17 @@
     <p id="alertMessage"></p>
 
     <ul id="historyList"></ul>
+    <canvas id="priceChart"></canvas>
+  </div>
+  <div class="route-controls">
+    <input type="text" id="originInput" placeholder="Origin (e.g. CLJ)">
+    <input type="text" id="destinationInput" placeholder="Destination (e.g. LTN)">
+    <button id="addRouteButton">Add Route</button>
   </div>
 
+  <select id="routeSelector"></select>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

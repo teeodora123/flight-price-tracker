@@ -66,3 +66,12 @@ button:hover {
     border-bottom: 1px solid #eee;
     font-size: 14px;
 }
+
+#routeSelector {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    align-self: flex-start;
+    height: fit-content;
+}
